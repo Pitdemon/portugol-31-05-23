@@ -1,0 +1,17 @@
+programa {
+  inclua biblioteca Util --> u
+  funcao inicio() {
+    //Gerar senha Ex:65982
+
+    inteiro numero
+    cadeia senha = ""
+
+    para(inteiro i = 1; i <= 5; i++){
+      numero = u.sorteia(0, 9)
+      senha += numero
+      
+    }
+
+    escreva(senha)
+  }
+}
